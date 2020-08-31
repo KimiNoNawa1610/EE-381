@@ -31,8 +31,8 @@ def main():
     def coin(r):
         print("Coin Flip Below ")
         for k in range(25):
-            c=math.floor(2*r[k]+1)
-            print(c)
+            c=math.floor(2*r[k])
+            print("head") if c==1 else print("tale")
 
     s=RNG()
     die(s)
