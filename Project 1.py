@@ -1,13 +1,15 @@
 ##EE 381 fall 2020 Project 1
 #Name: Nhan Vo
 #I.D:017771388
+#Start Date: 8-26-2020
+#End Date: 8-31-2020
 #The code for pseudorandom number generator is in this file
 #and it is used to do sumple simulation.
 
-def main():
+def main():# main module
     import math
 
-    def RNG():
+    def RNG():# pseudoRandomNumberGenerator
 
         r=[]#Empty list for our random numbers
         
@@ -24,15 +26,15 @@ def main():
 
     def die(r):
         print("Die roll below")
-        for k in range(25):
+        for k in range(25):#roll 25 time
             d=math.floor(6*r[k]+1)
             print(d)
 
     def coin(r):
         print("Coin Flip Below ")
-        for k in range(25):
+        for k in range(25):#flip 25 time
             c=math.floor(2*r[k])
-            print("head") if c==1 else print("tale")
+            print("head") if c==1 else print("tail")
 
     s=RNG()
     die(s)
