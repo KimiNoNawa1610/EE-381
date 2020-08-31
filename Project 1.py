@@ -5,6 +5,7 @@
 #and it is used to do sumple simulation.
 
 def main():
+    import math
 
     def RNG():
 
@@ -14,7 +15,7 @@ def main():
         A=4857#Adder
         M=8601#Multiplier
 
-        S= int(input("Enter a whole number"))
+        S= int(input("Enter a whole number. "))
         for i in range(100):
             S=(M*S+A)%N
             v=S/N#The number r will be in [0,1)
@@ -22,12 +23,19 @@ def main():
         return r
 
     def die(r):
-        import math
         print("Die roll below")
-        for k in range(10):
+        for k in range(25):
             d=math.floor(6*r[k]+1)
             print(d)
 
+    def coin(r):
+        print("Coin Flip Below ")
+        for k in range(25):
+            c=math.floor(2*r[k]+1)
+            print(c)
+
     s=RNG()
+    die(s)
+    coin(s)
 
 main()
