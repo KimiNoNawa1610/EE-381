@@ -19,25 +19,25 @@ def main():# main module
 
         S= int(input("Enter a whole number. "))
         for i in range(100):
-            S=(M*S+A)%N
+            S=(M*S+A)%N#Our linear congrutenital pseudoRandomNumberGenerator
             v=S/N#The number r will be in [0,1)
             r.append(v)
         return r
 
-    def die(r):
+    def die(r):#roll dice
         print("Die roll below")
         for k in range(25):#roll 25 time
-            d=math.floor(6*r[k]+1)
+            d=math.floor(6*r[k]+1)#linear transformation
             print(d)
 
-    def coin(r):
+    def coin(r):#flip coin
         print("Coin Flip Below ")
         for k in range(25):#flip 25 time
-            c=math.floor(2*r[k])
+            c=math.floor(2*r[k])#linear transformation
             print("head") if c==1 else print("tail")
 
-    s=RNG()
-    die(s)
-    coin(s)
+    s=RNG()# 's' is list of random numbers
+    die(s)# Call to die function
+    coin(s)#Call to coin function
 
 main()
