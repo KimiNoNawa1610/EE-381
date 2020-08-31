@@ -4,7 +4,7 @@
 #The code for pseudorandom number generator is in this file
 #and it is used to do sumple simulation.
 
-def PseudoGenerator():
+def main():
     N=10000#Cycle length or norm
     A=4857#Adder
     M=8601#Multiplier
@@ -15,4 +15,4 @@ def PseudoGenerator():
         r=S/N#The number r will be in [0,1)
         print(format(r,'.4f'))
 
-PseudoGenerator()
+main()
