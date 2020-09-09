@@ -7,3 +7,11 @@
 #End Date:
 #Simulation of a coin flip. Use simulation to determine probability of
 #heads on an odd flip.
+#----------------
+import random
+
+r=random.uniform(0,1)
+
+
+
+
