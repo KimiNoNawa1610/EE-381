@@ -8,9 +8,14 @@
 #Simulation of a coin flip. Use simulation to determine probability of
 #heads on an odd flip.
 #----------------
-import random
-
-r=random.uniform(0,1)
+import random# import random module
+p= float()
+for i in range(10):#count controlled loop and range function
+    r=random.uniform(0,1)
+    if r<p:
+        print("Heads")
+    else:
+        print("Tails")
 
 
 
