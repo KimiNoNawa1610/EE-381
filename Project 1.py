@@ -4,7 +4,7 @@
 #Start Date: 8-26-2020
 #End Date: 8-31-2020
 #The code for pseudorandom number generator is in this file
-#and it is used to do sumple simulation.
+#and it is used to do simple simulation.
 
 def main():# main module
     import math
